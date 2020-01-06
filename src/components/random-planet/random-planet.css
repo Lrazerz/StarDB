@@ -1,0 +1,34 @@
+.random-planet {
+    margin: 5px 5px;
+}
+
+.planet-info-wrapper {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.planet-image {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.description-list {
+    width: 100%;
+    display: block;
+    height: 200px;
+}
+
+.description-list-item {
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.planet-name {
+    font-size: 20px;
+}
