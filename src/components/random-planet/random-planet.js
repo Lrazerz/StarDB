@@ -36,7 +36,7 @@ class RandomPlanet extends Component {
     render = () => {
         const {loading,planet: {name,imageUrl,diameter,population,climate}} = this.state;
 
-        if(loading) return <LoadingIndicator/>;
+        if(loading) return <div className="random-planet"><LoadingIndicator/></div>;
         return (
             <div className="random-planet">
                 <div className="planet-info-wrapper">

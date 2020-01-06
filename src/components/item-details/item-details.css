@@ -1,0 +1,9 @@
+.item-details-wrapper {
+    display: flex;
+}
+
+.item-image {
+    display: block;
+    height: 300px;
+}
+

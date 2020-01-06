@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import LoadingIndicator from "../../loading-indicator";
 import withSwapiService from "../../hoc-helpers";
+import ItemList from "../../item-list";
 
 class StarshipsPage extends Component {
     state = {
@@ -16,15 +17,7 @@ class StarshipsPage extends Component {
 
     render = () => {
         if(this.state.loading) return <LoadingIndicator/>;
-
-        const starshipsList = this.state.starshipsList
-            .map(character => <li className="list-group-item">{character.name}</li>);
-        return (
-            <div>
-                <ul className="list-group">
-                    {starshipsList}
-                </ul>
-            </div>);
+        return <ItemList itemList={this.state.starshipsList}/>
     };
 }
 
