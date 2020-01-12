@@ -1,31 +1,17 @@
-import React, {Component} from "react";
-import LoadingIndicator from "../../loading-indicator";
-import withSwapiService from "../../hoc-helpers";
-import ItemList from "../../item-list";
+import React from "react";
+import {withRouter} from "react-router-dom";
+import {Row} from "react-bootstrap";
+import {StarshipsList} from "../../sw-components";
 
-class StarshipsPage extends Component {
-    state = {
-        starshipsList: [],
-        loading: true
-    };
+const StarshipsPage = ({history, match}) => {
 
-    componentDidMount() {
-        const {getAllStarships} = this.props.getSWData;
+    const {id} = match.params;
 
-        getAllStarships().then(starshipsList => this.setState({starshipsList,loading: false}));
-    }
-
-    render = () => {
-        if(this.state.loading) return <LoadingIndicator/>;
-        return <ItemList itemList={this.state.starshipsList}/>
-    };
-}
-
-const mapMethodsToProps = (swapiService) => {
-    return {
-        getAllStarships: swapiService.getAllStarships
-    }
+    return (
+        <Row >
+            <StarshipsList onItemSelected={(id) => history.push(`${id}`)}/>
+        </Row>
+    );
 };
 
-
-export default withSwapiService(mapMethodsToProps)(StarshipsPage);
+export default withRouter(StarshipsPage);

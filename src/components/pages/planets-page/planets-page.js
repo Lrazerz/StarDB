@@ -1,30 +1,17 @@
-import React, {Component} from "react";
-import LoadingIndicator from "../../loading-indicator";
-import withSwapiService from "../../hoc-helpers";
-import ItemList from "../../item-list";
+import React from "react";
+import {withRouter} from "react-router-dom";
+import {Row} from "react-bootstrap";
+import {PlanetsList} from "../../sw-components";
 
-class PlanetsPage extends Component {
-    state = {
-        planetsList: [],
-        loading: true
-    };
+const PlanetsPage = ({history, match}) => {
 
-    componentDidMount() {
-        const {getAllPlanets} = this.props.getSWData;
-        getAllPlanets().then(planetsList => this.setState({planetsList,loading: false}));
-    }
+        const {id} = match.params;
 
-    render = () => {
-        if(this.state.loading) return <LoadingIndicator/>;
-        return <ItemList itemList={this.state.planetsList}/>
-    };
-}
-
-const mapMethodsToProps = (swapiService) => {
-    return {
-        getAllPlanets: swapiService.getAllPlanets
-    }
+        return (
+            <Row >
+                <PlanetsList onItemSelected={(id) => history.push(`${id}`)}/>
+            </Row>
+        );
 };
 
-
-export default withSwapiService(mapMethodsToProps)(PlanetsPage);
+export default withRouter(PlanetsPage);

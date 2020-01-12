@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import WithSwapiService from "../hoc-helpers";
+import {withSwapiService} from "../hoc-helpers";
 import LoadingIndicator from "../loading-indicator";
 
-import "./random-planet.css"
+import "./random-planet.scss"
 
 class RandomPlanet extends Component {
     state = {
@@ -17,7 +17,7 @@ class RandomPlanet extends Component {
     };
 
     updatePlanet = () => {
-        const {getPlanet} = this.props.getSWData;
+        const {getPlanet} = this.props;
         const randomId = Math.ceil(Math.random()*10);
         this.setState({loading:true});
         getPlanet(randomId).then(planet => this.setState({planet,loading:false}));
@@ -70,4 +70,4 @@ const mapMethodsToProps = (swapiService) => {
     }
 };
 
-export default WithSwapiService(mapMethodsToProps)(RandomPlanet);
+export default withSwapiService(mapMethodsToProps)(RandomPlanet);

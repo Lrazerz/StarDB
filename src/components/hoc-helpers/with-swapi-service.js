@@ -1,16 +1,21 @@
-import React from "react";
-import {SwapiServiceConsumer} from "../swapi-service-context"
+import React from 'react';
+import { SwapiServiceConsumer } from '../swapi-service-context';
 
-const WithSwapiService = (mapMethodToProps) => (Wrapped) => {
-    return (...props) => (
-        <SwapiServiceConsumer>
-            {
-                swapiService => {
-                const getSWData = mapMethodToProps(swapiService);
-                return <Wrapped {...props} getSWData={getSWData}/>;}
-            }
-        </SwapiServiceConsumer>
-    );
+const withSwapiService = (mapMethodsToProps) => (Wrapped) => {
+
+    return (props) => (
+            <SwapiServiceConsumer>
+                {
+                    (swapiService) => {
+                        const getDataProps = mapMethodsToProps(swapiService);
+
+                        return (
+                            <Wrapped {...props} {...getDataProps} />
+                        );
+                    }
+                }
+            </SwapiServiceConsumer>
+        );
 };
 
-export default WithSwapiService;
+export default withSwapiService;

@@ -1,14 +1,13 @@
 import React, {Component} from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 
-import "./app.css";
+import "./app.scss";
 
 import SwapiService from "../../services/swapi-service";
 
 import {SwapiServiceProvider} from "../swapi-service-context";
 
 import Header from "../header";
-import LoadingIndicator from "../loading-indicator";
 import CharactersPage from "../pages/characters-page";
 import PlanetsPage from "../pages/planets-page";
 import StarshipsPage from "../pages/starships-page";
@@ -28,13 +27,13 @@ export default class App extends Component {
                         <Header/>
                         <RandomPlanet/>
                         <Switch>
-                            <Route path="/characters/">
+                            <Route path="/characters">
                                 <CharactersPage/>
                             </Route>
-                            <Route path="/planets/">
+                            <Route path="/planets">
                                 <PlanetsPage/>
                             </Route>
-                            <Route path="/starships/">
+                            <Route path="/starships">
                                 <StarshipsPage/>
                             </Route>
                         </Switch>

@@ -1,9 +1,14 @@
 import React from "react";
 
-import "./item-list.css";
+import "./item-list.scss";
 
 const ItemList = (props) => {
-    const renderItems = props.itemList.map(item => <li className="list-group-item" key={item.id}>{item.name}</li>);
+    const renderItems = props.data
+        .map(item =>
+            <li className="list-group-item" onClick={() => props.onItemSelected(item.id)} key={item.id}>
+                {item.name}
+            </li>);
+
     return (
         <div>
             <ul className="list-group">
@@ -11,5 +16,9 @@ const ItemList = (props) => {
             </ul>
         </div>);
 };
+
+// ItemList.defaultProps = {
+//     onItemSelected: () => {}
+// };
 
 export default ItemList;

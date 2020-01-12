@@ -1,20 +1,22 @@
-.nav-link {
-  font-size: 30px;
-  line-height: 40px;
-  color: #0312c3 !important;
+.header {
+  .nav-link {
+    font-size: 30px;
+    line-height: 40px;
+    color: #0312c3 !important;
 
-  &:hover {
-    color: black !important;
+    &:hover {
+      color: black !important;
+    }
+    &:focus {
+      color: #a30009 !important;
+    }
   }
-  &:focus {
-    color: #a30009 !important;
+  .nav-item {
+    margin-right: 6rem;
+  }
+
+  .header-title {
+    font-size: 40px;
   }
 }
 
-.nav-item {
-  margin-right: 6rem;
-}
-
-.header-title {
-  font-size: 40px;
-}

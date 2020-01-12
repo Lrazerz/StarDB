@@ -1,0 +1,28 @@
+.item-details-wrapper {
+    display: flex;
+
+    .item-image {
+        display: block;
+        height: 300px;
+        border-radius: 0.25rem;
+        margin-right: 5px;
+    }
+
+    .list-group {
+        width: 100%;
+        .list-group-item {
+            font-size: 17px;
+            text-align: center;
+            line-height: 50px;
+            height: 75px;
+        }
+        .item-name {
+            font-size: 23px;
+            color: #240dbd;
+        }
+        .term {
+            color: #ee292a;
+        }
+    }
+}
+

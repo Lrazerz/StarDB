@@ -1,3 +1,5 @@
-import WithSwapiService from "./with-swapi-service";
+import withSwapiService from "./with-swapi-service";
+import withData from "./with-data";
+import compose from "./compose";
 
-export default WithSwapiService;
+export {withSwapiService, withData, compose};
