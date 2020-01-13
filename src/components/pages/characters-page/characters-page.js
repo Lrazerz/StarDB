@@ -1,15 +1,14 @@
 import React from "react";
 import {withRouter} from "react-router-dom";
-import {Row} from "react-bootstrap";
-import {CharactersList} from "../../sw-components";
+import {Row,Col} from "react-bootstrap";
+import {CharactersList,CharacterDetails} from "../../sw-components";
 
-const CharactersPage = ({history, match}) => {
-
-    const {id} = match.params;
+const CharactersPage = ({history, match: {params: {id}}}) => {
 
     return (
         <Row >
-            <CharactersList onItemSelected={(id) => history.push(`${id}`)}/>
+            <Col><CharactersList onItemSelected={(id) => history.push(`${id}`)}/></Col>
+            <Col><CharacterDetails itemId={id}/></Col>
         </Row>
     );
 };

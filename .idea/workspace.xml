@@ -2,37 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52fc472a-87e9-4285-8144-67e3f16fe845" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/compose.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item-details/item-details.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item-list/item-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loading-indicator/loading-indicator.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/item-lists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error-boundary/error-boundary.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-boundary/error-boundary.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error-boundary/error-boundary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-boundary/error-boundary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/with-swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-swapi-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-details/item-details.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/item-details/item-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/error-indicator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading-indicator/loading-indicator.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading-indicator/loading-indicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading-indicator/loading-indicator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/characters-page/characters-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/characters-page/characters-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/planets-page/planets-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/planets-page/planets-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/starships-page/starships-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/starships-page/starships-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-planet/random-planet.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sw-components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/swapi-service/swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/swapi-service/swapi-service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +71,8 @@
       <workItem from="1578233334393" duration="36419000" />
       <workItem from="1578688499650" duration="600000" />
       <workItem from="1578755567675" duration="2509000" />
-      <workItem from="1578854003762" duration="14177000" />
+      <workItem from="1578854003762" duration="17457000" />
+      <workItem from="1578921349780" duration="3793000" />
     </task>
     <servers />
   </component>

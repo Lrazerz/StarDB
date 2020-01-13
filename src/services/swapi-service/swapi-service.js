@@ -76,7 +76,7 @@ export default class SwapiService {
         const id = this.pullIdFromUrl(starship.url);
         return {
             id,
-            imageUrl: this.getCharacterImgUrl(id),
+            imageUrl: this.getStarshipImgUrl(id),
             name: starship.name,
             capacity: starship.cargo_capacity,
             length: starship.length,

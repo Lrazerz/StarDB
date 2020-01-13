@@ -27,13 +27,13 @@ export default class App extends Component {
                         <Header/>
                         <RandomPlanet/>
                         <Switch>
-                            <Route path="/characters">
+                            <Route path="/characters/:id?">
                                 <CharactersPage/>
                             </Route>
-                            <Route path="/planets">
+                            <Route path="/planets/:id?">
                                 <PlanetsPage/>
                             </Route>
-                            <Route path="/starships">
+                            <Route path="/starships/:id?">
                                 <StarshipsPage/>
                             </Route>
                         </Switch>
